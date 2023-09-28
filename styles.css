@@ -479,7 +479,7 @@ input:focus{
     select all of the submit buttons (by tag name/type attribute) on the page
 */
 /* ----- */
-#mySubmit{
+input[type="submit"]{
     display: block;
     margin: 32px auto 16px;
     width: 100%;
@@ -502,7 +502,7 @@ input:focus{
     select all of the submit buttons on hover (by tag name/type attribute name) on the page
 */
 /* ----- */
-#mySubmit:hover{
+input[type="submit"]:hover{
     box-shadow: var(--box-shadow-sm);
     color: var(--purple);
     background-color: var(--lt-gray);
@@ -514,7 +514,7 @@ input:focus{
     select all of the submit buttons on focus (by tag name/type attribute/pseudo-class) on the page
 */
 /* ----- */
-#mySubmit:focus{
+input[type="submit"]:focus{
     box-shadow: var(--box-shadow-sm);
     outline: 4px solid var(--dv-dk-blue);
     outline-offset: 1px;
@@ -575,7 +575,7 @@ input:focus{
     select the first list item in the list styling container using the ID, tag name, and pseudo-class selectors
 */
 /* ----- */
-#list li:first-of-type{
+#list li:first-child{
     color: var(--purple);
 }
 
@@ -585,7 +585,7 @@ input:focus{
     select the last list item in the list styling container using the ID, tag name, and pseudo-class selectors
 */
 /* ----- */
-#list li:last-of-type{
+#list li:nth-child(3){
     color: var(--dv-lt-blue);
 }
 
@@ -598,7 +598,7 @@ input:focus{
     select all of the divs in the more styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-{
+#more div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -635,7 +635,7 @@ input:focus{
     select the third div in the more styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-{
+#more div.third{
     width: 200px;
     height: 200px;
     background-color: var(--dv-yellow);
@@ -647,7 +647,7 @@ input:focus{
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-{
+#more div.third:first-child{
     width: 150px;
     height: 150px;
     background-color: var(--dv-mint);
@@ -659,7 +659,7 @@ input:focus{
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-{
+#more div.inner{
     width: 100px;
     height: 100px;
     background-color: var(--dv-lt-blue);
